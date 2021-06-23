@@ -12,7 +12,7 @@ header{
 
 a{
     color: aquamarine;
-    margin: 20px;
+    margin: 15px;
     text-decoration: none;
     padding: 6px 10px;
 }
@@ -66,4 +66,85 @@ h1{
 
 .s{
 
+}
+
+* {box-sizing: border-box;}
+form {
+  position: relative;
+  width: 250px;
+  margin: 0 auto;
+}
+input, .vip {
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+input {
+  width: 100%;
+  height: 42px;
+  background: #F9F0DA;
+  padding-left: 15px;
+}
+.vip{
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  top: 8px;
+  right: 4px;
+  background: ;
+  cursor: pointer;
+  background-size: black;
+}
+.vip:before {
+  content: "\f105";
+  font-family: FontAwesome;
+  color: #F9F0DA;
+  font-size: 10px;
+  font-weight: bold;
+}
+aside{
+    display: flex;
+    justify-content: space-around;
+     padding: 20px 0;
+}
+
+div{
+    border: black 1px solid;
+    width: 32%;  
+    padding: 20px;
+    text-align: center;
+    background-color: cadetblue;  
+}
+
+footer{
+    background-color: midnightblue;
+    color: aqua;
+    padding: 30px;
+}
+
+@media(max-width: 500px){
+    header{
+        display: block;
+        padding: 15px 5px;
+        text-align: center;
+    }
+    header a{
+        display: inline-block;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .p1{
+        font-size: 20px;
+    }
+    aside{
+        display: block;
+    }
+    div{
+        width: 100%;
+        margin: 0px auto;
+    }
+    img{
+        max-width: 100% ;
+    }
 }
